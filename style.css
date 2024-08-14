@@ -45,3 +45,10 @@ h1 {
 #button-style{
     background-color: #8CE7F2;
 }
+.note {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
