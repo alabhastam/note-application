@@ -41,3 +41,7 @@ h1 {
     border: 2px solid #ced4da; /* Border color and thickness */
     box-sizing: border-box; /* Ensure padding doesn't affect the width */
 }
+
+#button-style{
+    background-color: #8CE7F2;
+}
