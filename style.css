@@ -65,3 +65,8 @@ h1 {
     right: 10px;
     cursor: pointer;
 }
+#clock{
+    font-size: 60px;
+    color:white ;
+    
+}

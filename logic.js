@@ -39,6 +39,20 @@ function removeNoteFromLocalStorage(noteText) {
     localStorage.setItem('notes', JSON.stringify(notes));
 }
 
+function updateTime() {
+    const clockElement = document.getElementById('clock');
+    
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+
+    const formattedTime = `${hours}:${minutes}:${seconds}`;
+
+   
+    clockElement.textContent = formattedTime;
+}
+
 document.getElementById('button-style').addEventListener('click', function() {
     const inputField = document.querySelector('#input-text-area input');
     const noteText = inputField.value.trim();
@@ -51,5 +65,6 @@ document.getElementById('button-style').addEventListener('click', function() {
         alert('Please write a note before adding.');
     }
 });
-
+setInterval(updateTime, 1000);
 window.addEventListener('load', loadNotes);
+updateTime();
