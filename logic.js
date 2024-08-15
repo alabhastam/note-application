@@ -11,6 +11,11 @@ document.getElementById('button-style').addEventListener('click', function() {
         const noteParagraph = document.createElement('p');
         noteParagraph.textContent = noteText;
 
+        const trashIcon = document.createElement('img');
+        trashIcon.src = '/trash-icon.png';
+        trashIcon.className = 'position-absolute top-50 start-50';
+
+    
         newNoteDiv.appendChild(noteParagraph);
 
         document.getElementById('content-area').appendChild(newNoteDiv);
